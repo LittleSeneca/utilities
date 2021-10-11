@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup qemu-system-x86_64 -cpu host -accel hvf -m 2048 -smp 2 -drive file=/Users/littleseneca/QEMU-VM/seedbox.qcow2,format=qcow2 -net user,hostfwd=tcp::10022-:22 -net nic -serial /dev/null -nographic &>/dev/null &

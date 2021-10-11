@@ -1,0 +1,2 @@
+#!/bin/bash
+ps aux | grep qemu-system | head -1
